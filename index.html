@@ -31,10 +31,11 @@ background:#1e293b;
 padding:20px;
 margin:20px 0;
 border-radius:10px;
+transition:0.3s;
 }
 
-a{
-color:#38bdf8;
+.card:hover{
+transform:scale(1.05);
 }
 
 </style>
@@ -48,6 +49,10 @@ color:#38bdf8;
 <h1>Piyush D. Hawelikar</h1>
 
 <p>VLSI Engineering Student | Programmer</p>
+
+  <a href="resume.pdf" download>
+<button>Download Resume</button>
+</a>
 
 </header>
 
@@ -92,8 +97,12 @@ AI, programming and cloud technologies.
 
 <p>Email: piyushhawelikar@gmail.com</p>
 
-<p>GitHub: https://github.com/piyushhawelikar</p>
+<p>GitHub: https://github.com/piyushhawelikar-beep</p>
 
+<a href="https://github.com/piyushhawelikar" target="_blank">
+Visit My GitHub
+</a>
+  
 </div>
 
 </section>
@@ -121,6 +130,10 @@ repoCard.innerHTML = `
 <h3>${repo.name}</h3>
 
 <p>${repo.description || "No description available"}</p>
+
+<p>⭐ ${repo.stargazers_count}</p>
+
+<p>Language: ${repo.language}</p>
 
 <a href="${repo.html_url}" target="_blank">View Repository</a>
 
